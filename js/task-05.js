@@ -2,7 +2,7 @@ const nameInput = document.querySelector("#name-input");
 let nameOutput = document.querySelector("#name-output");
 
 const displayName = () => {
-  if (nameInput.value === "") {
+  if (nameInput.value.trim() === "") {
     nameOutput.textContent = "Anonymous";
     return nameOutput;
   }

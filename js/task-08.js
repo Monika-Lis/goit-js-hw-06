@@ -5,7 +5,7 @@ const userPassword = document.querySelector("input[type=password]");
 loginForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (userEmail.value !== "" && userPassword.value !== "") {
+  if (userEmail.value.trim() !== "" && userPassword.value.trim() !== "") {
     const formData = {};
     const formElements = loginForm.elements;
     for (let element of formElements) {
